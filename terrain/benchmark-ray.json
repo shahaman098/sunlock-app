@@ -1,0 +1,79 @@
+{
+  "generated": "2026-11-15T03:24:49.472Z",
+  "site": "Peak near Shackleton (report coordinate)",
+  "note": "Same coordinate, same 64 km range, same curvature correction; only the distance between samples changes.",
+  "rows": [
+    {
+      "product": "80 m",
+      "spatialResM": 80,
+      "stepM": 80,
+      "stepsPerPixel": 1,
+      "meanHorizonDeg": -1.05,
+      "illumPct": 60
+    },
+    {
+      "product": "80 m",
+      "spatialResM": 80,
+      "stepM": 160,
+      "stepsPerPixel": 2,
+      "meanHorizonDeg": -1.74,
+      "illumPct": 75.3
+    },
+    {
+      "product": "80 m",
+      "spatialResM": 80,
+      "stepM": 320,
+      "stepsPerPixel": 4,
+      "meanHorizonDeg": -2.24,
+      "illumPct": 82.5
+    },
+    {
+      "product": "40 m",
+      "spatialResM": 40,
+      "stepM": 80,
+      "stepsPerPixel": 2,
+      "meanHorizonDeg": -0.44,
+      "illumPct": 41.7
+    },
+    {
+      "product": "40 m",
+      "spatialResM": 40,
+      "stepM": 160,
+      "stepsPerPixel": 4,
+      "meanHorizonDeg": -1.5,
+      "illumPct": 71.2
+    },
+    {
+      "product": "40 m",
+      "spatialResM": 40,
+      "stepM": 320,
+      "stepsPerPixel": 8,
+      "meanHorizonDeg": -2.1,
+      "illumPct": 79.3
+    },
+    {
+      "product": "20 m",
+      "spatialResM": 20,
+      "stepM": 80,
+      "stepsPerPixel": 4,
+      "meanHorizonDeg": -0.71,
+      "illumPct": 45
+    },
+    {
+      "product": "20 m",
+      "spatialResM": 20,
+      "stepM": 160,
+      "stepsPerPixel": 8,
+      "meanHorizonDeg": -1.68,
+      "illumPct": 73.5
+    },
+    {
+      "product": "20 m",
+      "spatialResM": 20,
+      "stepM": 320,
+      "stepsPerPixel": 16,
+      "meanHorizonDeg": -2.19,
+      "illumPct": 81.5
+    }
+  ]
+}

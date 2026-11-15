@@ -1,0 +1,195 @@
+{
+  "generated": "2026-11-15T03:24:48.711Z",
+  "window": {
+    "days": 180,
+    "stepMin": 30,
+    "start": "2027-01-01"
+  },
+  "model": {
+    "sunAngularRadiusDeg": 0.266,
+    "positionShiftRadiusM": 250,
+    "coarseHorizonSamplingDeg": 4
+  },
+  "sites": [
+    {
+      "site": "Peak near Cabeus B",
+      "illumPct": 48.19,
+      "centrePct": 47.37,
+      "discPct": 47.36,
+      "discDeltaPct": 0,
+      "criterionSpreadPct": 0.82,
+      "positionShiftSdPct": 0,
+      "horizon4degPct": 48.2,
+      "horizonDeltaPct": 0.01
+    },
+    {
+      "site": "Haworth",
+      "illumPct": 41.87,
+      "centrePct": 31.86,
+      "discPct": 32.28,
+      "discDeltaPct": 0.42,
+      "criterionSpreadPct": 10.01,
+      "positionShiftSdPct": 0.01,
+      "horizon4degPct": 41.89,
+      "horizonDeltaPct": 0.02
+    },
+    {
+      "site": "Malapert Massif",
+      "illumPct": 45.5,
+      "centrePct": 40.16,
+      "discPct": 40.03,
+      "discDeltaPct": -0.12,
+      "criterionSpreadPct": 5.35,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 45.54,
+      "horizonDeltaPct": 0.03
+    },
+    {
+      "site": "Mons Mouton Plateau",
+      "illumPct": 36.71,
+      "centrePct": 35.51,
+      "discPct": 35.5,
+      "discDeltaPct": 0,
+      "criterionSpreadPct": 1.2,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 36.67,
+      "horizonDeltaPct": -0.03
+    },
+    {
+      "site": "Mons Mouton",
+      "illumPct": 52.38,
+      "centrePct": 45.98,
+      "discPct": 45.45,
+      "discDeltaPct": -0.53,
+      "criterionSpreadPct": 6.4,
+      "positionShiftSdPct": 0.04,
+      "horizon4degPct": 52.02,
+      "horizonDeltaPct": -0.36
+    },
+    {
+      "site": "Nobile Rim 1",
+      "illumPct": 45.47,
+      "centrePct": 42.84,
+      "discPct": 42.73,
+      "discDeltaPct": -0.11,
+      "criterionSpreadPct": 2.63,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 45.53,
+      "horizonDeltaPct": 0.06
+    },
+    {
+      "site": "Nobile Rim 2",
+      "illumPct": 44.3,
+      "centrePct": 42.47,
+      "discPct": 42.55,
+      "discDeltaPct": 0.08,
+      "criterionSpreadPct": 1.83,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 44.37,
+      "horizonDeltaPct": 0.07
+    },
+    {
+      "site": "de Gerlache Rim 2",
+      "illumPct": 62.56,
+      "centrePct": 56.81,
+      "discPct": 56.93,
+      "discDeltaPct": 0.12,
+      "criterionSpreadPct": 5.75,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 62.57,
+      "horizonDeltaPct": 0.01
+    },
+    {
+      "site": "Slater Plain",
+      "illumPct": 48.62,
+      "centrePct": 46.92,
+      "discPct": 46.78,
+      "discDeltaPct": -0.13,
+      "criterionSpreadPct": 1.7,
+      "positionShiftSdPct": 0.01,
+      "horizon4degPct": 48.56,
+      "horizonDeltaPct": -0.06
+    },
+    {
+      "site": "Peak near Shackleton",
+      "illumPct": 27.08,
+      "centrePct": 18.89,
+      "discPct": 19.38,
+      "discDeltaPct": 0.5,
+      "criterionSpreadPct": 8.19,
+      "positionShiftSdPct": 0.05,
+      "horizon4degPct": 26.73,
+      "horizonDeltaPct": -0.35
+    },
+    {
+      "site": "Connecting Ridge",
+      "illumPct": 29.08,
+      "centrePct": 26.12,
+      "discPct": 26.26,
+      "discDeltaPct": 0.14,
+      "criterionSpreadPct": 2.96,
+      "positionShiftSdPct": 0.01,
+      "horizon4degPct": 29.05,
+      "horizonDeltaPct": -0.03
+    },
+    {
+      "site": "Connecting Ridge Extension",
+      "illumPct": 49.51,
+      "centrePct": 46.73,
+      "discPct": 46.53,
+      "discDeltaPct": -0.2,
+      "criterionSpreadPct": 2.78,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 49.47,
+      "horizonDeltaPct": -0.03
+    },
+    {
+      "site": "de Gerlache Rim 1",
+      "illumPct": 33.16,
+      "centrePct": 28.56,
+      "discPct": 28.93,
+      "discDeltaPct": 0.36,
+      "criterionSpreadPct": 4.59,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 33.1,
+      "horizonDeltaPct": -0.06
+    },
+    {
+      "site": "de Gerlache–Kocher Massif",
+      "illumPct": 46.8,
+      "centrePct": 43.86,
+      "discPct": 43.95,
+      "discDeltaPct": 0.09,
+      "criterionSpreadPct": 2.94,
+      "positionShiftSdPct": 0.02,
+      "horizon4degPct": 46.86,
+      "horizonDeltaPct": 0.06
+    },
+    {
+      "site": "Amundsen Rim",
+      "illumPct": 49.27,
+      "centrePct": 47.25,
+      "discPct": 47.22,
+      "discDeltaPct": -0.03,
+      "criterionSpreadPct": 2.01,
+      "positionShiftSdPct": 0.01,
+      "horizon4degPct": 49.28,
+      "horizonDeltaPct": 0.01
+    },
+    {
+      "site": "Faustini Rim A",
+      "illumPct": 43.61,
+      "centrePct": 38.87,
+      "discPct": 38.92,
+      "discDeltaPct": 0.04,
+      "criterionSpreadPct": 4.73,
+      "positionShiftSdPct": 0.03,
+      "horizon4degPct": 43.46,
+      "horizonDeltaPct": -0.15
+    }
+  ],
+  "maxDiscDeltaPct": 0.53,
+  "maxCriterionSpreadPct": 10.01,
+  "maxPositionShiftSdPct": 0.05,
+  "maxHorizonDeltaPct": 0.36
+}

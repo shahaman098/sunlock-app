@@ -1,0 +1,62 @@
+{
+ "reference": "NASA PGDA product 69, AVGVISIB_85S_060M_201608 (LOLA team, 18.6-year average, 60 m/px)",
+ "mapWide": {
+  "what": "random points 85-90°S, fixed seed",
+  "n": 1782,
+  "stepHours": 1,
+  "r": 0.9897,
+  "rmsePp": 1.88,
+  "biasPp": 0.01,
+  "shadow": {
+   "n": 2000,
+   "iou": 0.926,
+   "tp": 212,
+   "fp": 6,
+   "fn": 11
+  },
+  "earth": {
+   "n": 1471,
+   "r": 0.9894,
+   "rmsePp": 2.98,
+   "biasPp": 0.19
+  }
+ },
+ "preregistered": {
+  "H1": {
+   "test": "sunlight r >= 0.90 and |bias| <= 5 pp",
+   "result": "pass"
+  },
+  "H2": {
+   "test": "permanent-shadow IoU >= 0.80",
+   "result": "pass"
+  },
+  "H3": {
+   "test": "LROC WAC r >= 0.85",
+   "result": "pass",
+   "n": 296,
+   "r": 0.9798,
+   "rmsePp": 3.09,
+   "biasPp": 1.59
+  },
+  "H4": {
+   "test": "Earth visibility r >= 0.90",
+   "result": "pass"
+  }
+ },
+ "landingSites": {
+  "what": "published Artemis III landing sites (Wueller et al. 2026) inside the map",
+  "n": 105,
+  "stepHours": 1,
+  "r": 0.915,
+  "biasPp": -1.1,
+  "rmsePp": 6.8,
+  "within5pp": 80
+ },
+ "earthAtLandingSites": {
+  "what": "Earth visibility at the same sites vs AVGVISIB_85S_060M_201608_EARTH (pre-registered H4: r >= 0.90)",
+  "n": 105,
+  "r": 0.976,
+  "biasPp": 0,
+  "rmsePp": 3.5
+ }
+}

@@ -1,0 +1,173 @@
+{
+  "generated": "2026-11-15T03:14:35.934Z",
+  "source": "JPL Horizons API (ssd-api.jpl.nasa.gov) — astrometric RA/Dec, sub-observer and sub-solar lon/lat",
+  "epochs": 12,
+  "geometry": {
+    "maxSunArcsec": 21,
+    "maxEarthArcsec": 22.7
+  },
+  "frame": {
+    "maxEarthLonDeg": 0.0079,
+    "maxEarthLatDeg": 0.002,
+    "maxSunLonDeg": 0.0032,
+    "maxSunLatDeg": 0.0021
+  },
+  "rows": [
+    {
+      "epoch": "2027-01-01T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 20.8,
+        "earth": 7.2
+      },
+      "frameDeg": {
+        "earthLon": 0.0041,
+        "earthLat": 0.0003,
+        "sunLon": 0.0032,
+        "sunLat": 0.0014
+      }
+    },
+    {
+      "epoch": "2027-01-17T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 20.9,
+        "earth": 3.5
+      },
+      "frameDeg": {
+        "earthLon": 0.0022,
+        "earthLat": 0.0003,
+        "sunLon": 0.0002,
+        "sunLat": 0.0015
+      }
+    },
+    {
+      "epoch": "2027-02-02T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 20.9,
+        "earth": 15.8
+      },
+      "frameDeg": {
+        "earthLon": 0.0048,
+        "earthLat": 0.0016,
+        "sunLon": 0.002,
+        "sunLat": 0.002
+      }
+    },
+    {
+      "epoch": "2027-02-18T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 21,
+        "earth": 12.6
+      },
+      "frameDeg": {
+        "earthLon": 0.0065,
+        "earthLat": 0.0011,
+        "sunLon": 0.0009,
+        "sunLat": 0.0017
+      }
+    },
+    {
+      "epoch": "2027-03-06T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 20.3,
+        "earth": 20.8
+      },
+      "frameDeg": {
+        "earthLon": 0.0054,
+        "earthLat": 0.0017,
+        "sunLon": 0.0011,
+        "sunLat": 0.0017
+      }
+    },
+    {
+      "epoch": "2027-03-22T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 20.4,
+        "earth": 17.9
+      },
+      "frameDeg": {
+        "earthLon": 0.0079,
+        "earthLat": 0.0004,
+        "sunLon": 0.0016,
+        "sunLat": 0.0003
+      }
+    },
+    {
+      "epoch": "2027-04-07T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 19.7,
+        "earth": 22.7
+      },
+      "frameDeg": {
+        "earthLon": 0.0058,
+        "earthLat": 0.002,
+        "sunLon": 0.0008,
+        "sunLat": 0.0021
+      }
+    },
+    {
+      "epoch": "2027-04-23T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 19.9,
+        "earth": 16.1
+      },
+      "frameDeg": {
+        "earthLon": 0.0071,
+        "earthLat": 0.0001,
+        "sunLon": 0.0017,
+        "sunLat": 0.0002
+      }
+    },
+    {
+      "epoch": "2027-05-09T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 19.5,
+        "earth": 19.8
+      },
+      "frameDeg": {
+        "earthLon": 0.0049,
+        "earthLat": 0.0015,
+        "sunLon": 0.0012,
+        "sunLat": 0.0015
+      }
+    },
+    {
+      "epoch": "2027-05-25T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 19.8,
+        "earth": 10.7
+      },
+      "frameDeg": {
+        "earthLon": 0.0049,
+        "earthLat": 0.0011,
+        "sunLon": 0.001,
+        "sunLat": 0.0008
+      }
+    },
+    {
+      "epoch": "2027-06-10T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 19.6,
+        "earth": 8.4
+      },
+      "frameDeg": {
+        "earthLon": 0.0029,
+        "earthLat": 0.0004,
+        "sunLon": 0.0017,
+        "sunLat": 0.0006
+      }
+    },
+    {
+      "epoch": "2027-06-26T00:00:00Z",
+      "geometryArcsec": {
+        "sun": 20,
+        "earth": 3.2
+      },
+      "frameDeg": {
+        "earthLon": 0.0022,
+        "earthLat": 0.001,
+        "sunLon": 0.0002,
+        "sunLat": 0.0013
+      }
+    }
+  ]
+}

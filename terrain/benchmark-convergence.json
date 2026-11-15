@@ -1,0 +1,32 @@
+{
+  "generated": "2026-11-15T03:24:49.016Z",
+  "site": "Peak near Shackleton (report coordinate)",
+  "terrain": "LDEM_80S_80M, bilinear sampling",
+  "sunAngularRadiusDeg": 0.266,
+  "rows": [
+    {
+      "stepM": 80,
+      "meanHorizonDeg": -1.16,
+      "centrePct": 58.3,
+      "limbPct": 63.8
+    },
+    {
+      "stepM": 40,
+      "meanHorizonDeg": -1.1,
+      "centrePct": 58.3,
+      "limbPct": 62.8
+    },
+    {
+      "stepM": 20,
+      "meanHorizonDeg": -1.05,
+      "centrePct": 58.2,
+      "limbPct": 62.7
+    },
+    {
+      "stepM": 10,
+      "meanHorizonDeg": -0.99,
+      "centrePct": 57.8,
+      "limbPct": 62.3
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+ "about": "What every shipped SUNLOCK data file was built from. Written by web/scripts/pipeline.mjs (npm run data); NASA inputs are listed with their official URLs in data/sources.json.",
+ "commit": "3efc23d",
+ "uncommittedChanges": true,
+ "sources": {
+  "ldem_80s_80m": {
+   "path": "data/raw/ldem_80s_80m.img",
+   "url": "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/polar/img/ldem_80s_80m.img",
+   "bytes": 115520000,
+   "sha256": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+   "product": "LRO LOLA LDEM_80S_80M, 80 m/px south polar DEM (PDS Geosciences Node, LRO-L-LOLA-4-GDR-V1.0)"
+  },
+  "avgvisib_85s": {
+   "path": "research/validation/raw/AVGVISIB_85S_060M_201608.IMG",
+   "url": "http://imbrium.mit.edu/EXTRAS/ILLUMINATION/IMG/AVGVISIB_85S_060M_201608.IMG",
+   "bytes": 51166728,
+   "sha256": "82dadf321dee28f1947c1fed81858d4cf50fe8eb2aa405aae114e8ab21c1efe1",
+   "product": "LOLA team 18.6-year average Sun visibility, 60 m/px, 85-90 S (NASA PGDA product 69, Mazarico et al. 2011)"
+  },
+  "avgvisib_85s_lbl": {
+   "path": "research/validation/raw/AVGVISIB_85S_060M_201608.LBL",
+   "url": "http://imbrium.mit.edu/EXTRAS/ILLUMINATION/IMG/AVGVISIB_85S_060M_201608.LBL",
+   "bytes": 4094,
+   "sha256": "33decce957d5d4d9608557d8d969d1e1b94056a159b2563624ade4b528a0c917",
+   "product": "label for AVGVISIB_85S_060M_201608"
+  },
+  "avgvisib_85s_earth": {
+   "path": "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.IMG",
+   "url": "http://imbrium.mit.edu/EXTRAS/ILLUMINATION/IMG/AVGVISIB_85S_060M_201608_EARTH.IMG",
+   "bytes": 51166728,
+   "sha256": "0958313069d6039b2474c875ff662f28dbcba2bd853d9ea458aa807b7948c11f",
+   "product": "LOLA team 18.6-year average Earth visibility, 60 m/px, 85-90 S (PGDA product 69)"
+  },
+  "avgvisib_85s_earth_lbl": {
+   "path": "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.LBL",
+   "url": "http://imbrium.mit.edu/EXTRAS/ILLUMINATION/IMG/AVGVISIB_85S_060M_201608_EARTH.LBL",
+   "bytes": 4111,
+   "sha256": "45a61697d779fdb9170bca2553f9e0188aeda1159811d3531c348df8f57f68bd",
+   "product": "label for AVGVISIB_85S_060M_201608_EARTH"
+  },
+  "lpsr_85s": {
+   "path": "research/validation/raw/LPSR_85S_060M_201608.IMG",
+   "url": "http://imbrium.mit.edu/EXTRAS/ILLUMINATION/IMG/LPSR_85S_060M_201608.IMG",
+   "bytes": 51166728,
+   "sha256": "f8203cab342c817fc7851431e264def3cc64a3b8c30f032d61e0a44f1e4ef761",
+   "product": "LOLA team permanently shadowed regions, 60 m/px, 85-90 S (PGDA product 69)"
+  },
+  "lpsr_85s_lbl": {
+   "path": "research/validation/raw/LPSR_85S_060M_201608.LBL",
+   "url": "http://imbrium.mit.edu/EXTRAS/ILLUMINATION/IMG/LPSR_85S_060M_201608.LBL",
+   "bytes": 3914,
+   "sha256": "42ae7cb0ae64ff8df7a17106228921bd07eb9afba8fb833c4a8cfd2f53487c0f",
+   "product": "label for LPSR_85S_060M_201608"
+  },
+  "wac_twi_south": {
+   "path": "research/validation/raw/wac_twi.img",
+   "url": "https://pds.lroc.asu.edu/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/BDR/WAC_POLE/WAC_POLE_ILL_TWI_SOUTH/WAC_POLE_ILL_TWI_SOUTH_100M.IMG",
+   "bytes": 5904896,
+   "sha256": "dfecc026012fe24f67ca70ed21a09a1723ca0750bf3ec120f1a4ed2c4604717b",
+   "product": "LROC WAC_POLE_ILL_TWI_SOUTH_100M v1.3, image-based illumination 15 Feb 2010 - 5 Feb 2011, 100 m/px, 88-90 S (Speyerer & Robinson 2013)"
+  },
+  "wac_twi_south_xml": {
+   "path": "research/validation/raw/wac_twi.xml",
+   "url": "https://pds.lroc.asu.edu/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/BDR/WAC_POLE/WAC_POLE_ILL_TWI_SOUTH/WAC_POLE_ILL_TWI_SOUTH_100M.xml",
+   "bytes": 12931,
+   "sha256": "720227bb767c77af6e6b4cfa23bf0a93c4cb3f299d6093c6c2f0483e9a615766",
+   "product": "PDS4 label for WAC_POLE_ILL_TWI_SOUTH_100M"
+  },
+  "wueller2026_sites": {
+   "path": "research/data/wueller2026-landing-sites.csv",
+   "url": "https://doi.org/10.5281/zenodo.17084058",
+   "bytes": 4019,
+   "sha256": "545b948cef999a503a362932a620eda2a319cc92defaa79ea21890fab9de89b9",
+   "product": "Artemis III candidate landing sites, Wueller et al. (2026), JGR Planets, CC BY 4.0 (extracted from Landing_Sites.zip; committed in the repo)"
+  }
+ },
+ "stages": {
+  "terrain": {
+   "command": "node scripts/build-terrain.mjs",
+   "ranAt": "2026-11-15T18:35:58.784Z",
+   "seconds": 2,
+   "key": "bb2a434dd433aaa9acf096d42bd7a11c7d79c2dffa77da2a63457b0f1dae272d",
+   "inputs": {
+    "scripts/build-terrain.mjs": "18e7117e6cdf0511fc93c20f8696e0c8b04d75871c64c3928b7dd5f67c23ce95",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc"
+   },
+   "outputs": [
+    "web/public/terrain/hillshade.jpg",
+    "web/public/terrain/shadowgrid.bin",
+    "web/public/terrain/elevgrid.bin"
+   ]
+  },
+  "validate-lola": {
+   "command": "node scripts/validate-lola.mjs --points 2000 --step 1 --convention converged",
+   "ranAt": "2026-11-15T18:42:43.825Z",
+   "seconds": 40,
+   "key": "80dd90e9582cc0a875435d9d4042b299e3987959b1723d570477a4743533755d",
+   "inputs": {
+    "web/scripts/validate-lola.mjs": "7085a9a30d618116ba13e07fd64528034f632bc9f1796cee3ba99bf22d8fc3f0",
+    "web/src/lib/selene.ts": "c68784ca4beda39ed01b83fcdd12954b526ac2abe9a4f12f259029f1eea2700f",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.IMG": "82dadf321dee28f1947c1fed81858d4cf50fe8eb2aa405aae114e8ab21c1efe1",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.LBL": "33decce957d5d4d9608557d8d969d1e1b94056a159b2563624ade4b528a0c917",
+    "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.IMG": "0958313069d6039b2474c875ff662f28dbcba2bd853d9ea458aa807b7948c11f",
+    "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.LBL": "45a61697d779fdb9170bca2553f9e0188aeda1159811d3531c348df8f57f68bd",
+    "research/validation/raw/LPSR_85S_060M_201608.IMG": "f8203cab342c817fc7851431e264def3cc64a3b8c30f032d61e0a44f1e4ef761",
+    "research/validation/raw/LPSR_85S_060M_201608.LBL": "42ae7cb0ae64ff8df7a17106228921bd07eb9afba8fb833c4a8cfd2f53487c0f"
+   },
+   "outputs": [
+    "research/validation/result-converged.json",
+    "research/validation/pairs-converged.csv",
+    "research/validation/scatter-converged.svg"
+   ]
+  },
+  "validate-wac": {
+   "command": "node scripts/validate-wac.mjs",
+   "ranAt": "2026-11-15T18:43:29.218Z",
+   "seconds": 7,
+   "key": "8896c03ae651cee949de8e4a82e345c2530049dc0dbca5ddd77e0641af781fd0",
+   "inputs": {
+    "web/scripts/validate-wac.mjs": "ac1422e9cf71c94ccfa940c4b98bd6a59cc472221f1fc89120f6cd7fc1aac637",
+    "scripts/lib/horizon.mjs": "827e5f7e859016c1b7b7343d5c85ec98f3f57f55742469cdce0129b2a4c82e43",
+    "web/src/lib/selene.ts": "c68784ca4beda39ed01b83fcdd12954b526ac2abe9a4f12f259029f1eea2700f",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+    "research/validation/raw/wac_twi.img": "dfecc026012fe24f67ca70ed21a09a1723ca0750bf3ec120f1a4ed2c4604717b",
+    "research/validation/raw/wac_twi.xml": "720227bb767c77af6e6b4cfa23bf0a93c4cb3f299d6093c6c2f0483e9a615766",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.IMG": "82dadf321dee28f1947c1fed81858d4cf50fe8eb2aa405aae114e8ab21c1efe1",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.LBL": "33decce957d5d4d9608557d8d969d1e1b94056a159b2563624ade4b528a0c917"
+   },
+   "outputs": [
+    "research/validation/result-wac.json",
+    "research/validation/pairs-wac.csv"
+   ]
+  },
+  "validate-wac-movie": {
+   "command": "node scripts/validate-wac-movie.mjs",
+   "ranAt": "2026-11-15T19:27:15.618Z",
+   "seconds": 27,
+   "key": "8a0ea5ffde1fe3e741287905a8b3af137ea9028eab76d48b9dfc6833295a7357",
+   "inputs": {
+    "web/scripts/validate-wac-movie.mjs": "e08c7001f2b742a6eadcb36f56b55afe4b9dddf52d6753bb8c1ec98145185350",
+    "scripts/lib/horizon.mjs": "827e5f7e859016c1b7b7343d5c85ec98f3f57f55742469cdce0129b2a4c82e43",
+    "web/src/lib/selene.ts": "c68784ca4beda39ed01b83fcdd12954b526ac2abe9a4f12f259029f1eea2700f",
+    "web/src/lib/power.ts": "7c59d9788effa9d92f6bde634f14ad677f87e3f82d5b12b9ca190bfc5cb1a9b5",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.IMG": "82dadf321dee28f1947c1fed81858d4cf50fe8eb2aa405aae114e8ab21c1efe1",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.LBL": "33decce957d5d4d9608557d8d969d1e1b94056a159b2563624ade4b528a0c917",
+    "research/validation/wac-movie-samples.json": "f1b41726108c9121d0c5484c26fe6d71b9a76d0e498c2c19d931d3301005ac65",
+    "research/validation/wac-movie-samples.bin": "838efceb65affb04cf65aa37d07af1efe0fec88ac6e6be1795045aa9da4b2273"
+   },
+   "outputs": [
+    "research/validation/result-wac-movie.json",
+    "web/public/terrain/wac-movie.json",
+    "web/public/terrain/wac-movie.bin"
+   ]
+  },
+  "sites": {
+   "command": "node scripts/select-sites.mjs",
+   "ranAt": "2026-11-15T18:42:50.834Z",
+   "seconds": 7,
+   "key": "a1ede8560174a664547a7293150ec34c2940e6adb118314b2f73e5a491093954",
+   "inputs": {
+    "web/scripts/select-sites.mjs": "492c988be8fb6652b7c9b2f3d1bc2e6044488bcf90b33b7132e8a6890d465dd0",
+    "scripts/lib/horizon.mjs": "827e5f7e859016c1b7b7343d5c85ec98f3f57f55742469cdce0129b2a4c82e43",
+    "web/src/lib/selene.ts": "c68784ca4beda39ed01b83fcdd12954b526ac2abe9a4f12f259029f1eea2700f",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.IMG": "82dadf321dee28f1947c1fed81858d4cf50fe8eb2aa405aae114e8ab21c1efe1",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.LBL": "33decce957d5d4d9608557d8d969d1e1b94056a159b2563624ade4b528a0c917",
+    "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.IMG": "0958313069d6039b2474c875ff662f28dbcba2bd853d9ea458aa807b7948c11f",
+    "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.LBL": "45a61697d779fdb9170bca2553f9e0188aeda1159811d3531c348df8f57f68bd",
+    "research/validation/raw/LPSR_85S_060M_201608.IMG": "f8203cab342c817fc7851431e264def3cc64a3b8c30f032d61e0a44f1e4ef761",
+    "research/validation/raw/LPSR_85S_060M_201608.LBL": "42ae7cb0ae64ff8df7a17106228921bd07eb9afba8fb833c4a8cfd2f53487c0f",
+    "research/data/wueller2026-landing-sites.csv": "545b948cef999a503a362932a620eda2a319cc92defaa79ea21890fab9de89b9",
+    "research/validation/result-converged.json": "66842edc4e3e2412e2f68809f4eaeb373c1243747e7ab1dc705c5ffcc0682607",
+    "research/validation/result-wac.json": "970c23ec1a1fc0265492a69d0875e5c9ea9de7a3af214cde257a1d6bac2d3ae7"
+   },
+   "outputs": [
+    "web/public/terrain/sites.json",
+    "web/public/terrain/regions.json",
+    "web/public/terrain/validation.json"
+   ]
+  },
+  "nearby": {
+   "command": "node scripts/build-nearby.mjs",
+   "ranAt": "2026-11-15T18:36:58.222Z",
+   "seconds": 3,
+   "key": "1e02100455b97c5088be67af7a0061c5c1cdc08b3cd3e39021a3d925bfd74339",
+   "inputs": {
+    "web/scripts/build-nearby.mjs": "07bd5b8402da9d29d27c497bad56581da3b5c48982a4a37ff39ebeb3ee9047ca",
+    "scripts/lib/horizon.mjs": "827e5f7e859016c1b7b7343d5c85ec98f3f57f55742469cdce0129b2a4c82e43",
+    "web/src/lib/selene.ts": "c68784ca4beda39ed01b83fcdd12954b526ac2abe9a4f12f259029f1eea2700f",
+    "web/src/lib/terrain.ts": "edec04da2a2ba5fa8e1d29ee057164e9f36547d048925c0f5907df7169f4cb83",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+    "web/public/terrain/sites.json": "76a3f288da5e363c4d45718309f84d6571cde873290fb184711a071d50a60e17"
+   },
+   "outputs": [
+    "web/public/terrain/nearby.json"
+   ]
+  },
+  "finder": {
+   "command": "node scripts/build-finder.mjs",
+   "ranAt": "2026-11-15T18:37:04.197Z",
+   "seconds": 6,
+   "key": "45224ec2b64f698f05c1bef25ec505fa77d87a236f7cafd606cd06574562f933",
+   "inputs": {
+    "web/scripts/build-finder.mjs": "96966778dbb99c5718fa1a1f31c5a4323c4c9217447b76c79ec68e956f619f61",
+    "scripts/lib/horizon.mjs": "827e5f7e859016c1b7b7343d5c85ec98f3f57f55742469cdce0129b2a4c82e43",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.IMG": "82dadf321dee28f1947c1fed81858d4cf50fe8eb2aa405aae114e8ab21c1efe1",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.LBL": "33decce957d5d4d9608557d8d969d1e1b94056a159b2563624ade4b528a0c917",
+    "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.IMG": "0958313069d6039b2474c875ff662f28dbcba2bd853d9ea458aa807b7948c11f",
+    "research/validation/raw/AVGVISIB_85S_060M_201608_EARTH.LBL": "45a61697d779fdb9170bca2553f9e0188aeda1159811d3531c348df8f57f68bd",
+    "research/validation/raw/LPSR_85S_060M_201608.IMG": "f8203cab342c817fc7851431e264def3cc64a3b8c30f032d61e0a44f1e4ef761",
+    "research/validation/raw/LPSR_85S_060M_201608.LBL": "42ae7cb0ae64ff8df7a17106228921bd07eb9afba8fb833c4a8cfd2f53487c0f"
+   },
+   "outputs": [
+    "web/public/terrain/finder.bin",
+    "web/public/terrain/finder.json"
+   ]
+  },
+  "missions": {
+   "command": "node scripts/build-missions.mjs",
+   "ranAt": "2026-11-15T18:37:04.367Z",
+   "seconds": 0,
+   "key": "bf1d8f2afa87ec8f774807c73e6bf7a0a224d141ae412e4e0137ec283accb84b",
+   "inputs": {
+    "web/scripts/build-missions.mjs": "f3ace74454c5bb59a8a57c06903407b3c46ff51ba3f05bba8f34f7b6c990c590",
+    "scripts/lib/horizon.mjs": "827e5f7e859016c1b7b7343d5c85ec98f3f57f55742469cdce0129b2a4c82e43",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc"
+   },
+   "outputs": [
+    "web/public/terrain/missions.json"
+   ]
+  },
+  "validate-nearby": {
+   "command": "node scripts/validate-nearby.mjs",
+   "ranAt": "2026-11-15T18:37:20.166Z",
+   "seconds": 16,
+   "key": "ca3d1a4a2cde88df22de5e4f76155b67f74e1560a8e8343d22aa8e5204ebba81",
+   "inputs": {
+    "web/scripts/validate-nearby.mjs": "bca319c9f3975f0767fd69bfdbac9e9de5ca12302c54061b318f64d84171ef4f",
+    "scripts/lib/horizon.mjs": "827e5f7e859016c1b7b7343d5c85ec98f3f57f55742469cdce0129b2a4c82e43",
+    "web/src/lib/selene.ts": "c68784ca4beda39ed01b83fcdd12954b526ac2abe9a4f12f259029f1eea2700f",
+    "web/src/lib/analysis.ts": "ef6e7007d5939ef2589478f3c04d3dbf473449c69f6832ae42952907ea39915c",
+    "web/src/lib/power.ts": "7c59d9788effa9d92f6bde634f14ad677f87e3f82d5b12b9ca190bfc5cb1a9b5",
+    "web/src/lib/terrain.ts": "edec04da2a2ba5fa8e1d29ee057164e9f36547d048925c0f5907df7169f4cb83",
+    "data/raw/ldem_80s_80m.img": "e6591eeea35402ca5e124ca00f5bf0774381a2d4fa919144b455d82b8ff65fdc",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.IMG": "82dadf321dee28f1947c1fed81858d4cf50fe8eb2aa405aae114e8ab21c1efe1",
+    "research/validation/raw/AVGVISIB_85S_060M_201608.LBL": "33decce957d5d4d9608557d8d969d1e1b94056a159b2563624ade4b528a0c917",
+    "web/public/terrain/sites.json": "76a3f288da5e363c4d45718309f84d6571cde873290fb184711a071d50a60e17",
+    "web/public/terrain/regions.json": "ce5e6bad6d9126aac749b7013fb403a03dff55e3d7bc7bca8e53f348f5a7dbb8",
+    "web/public/terrain/elevgrid.bin": "99ef8f35f07b561b878e2a3883688f4e4b903da4b551b5ed5c255c28afa01e11",
+    "web/public/terrain/nearby.json": "8753241db3d56d7d8bffc8dae26358ca7b7b59b60827026a95e94a64023caa13"
+   },
+   "outputs": [
+    "research/validation/nearby.json"
+   ]
+  }
+ },
+ "outputs": {
+  "web/public/terrain/hillshade.jpg": {
+   "sha256": "cdf083aba4dae9dff9b695f28a289a1cbf5cb4bd93bef609a010d3c3bd6eba7e",
+   "bytes": 536152,
+   "stage": "terrain"
+  },
+  "web/public/terrain/shadowgrid.bin": {
+   "sha256": "cbc7d3d0fda0ac327c02a700674d97b99b4d406696a268d1f6044a5cc9f2ac40",
+   "bytes": 2359296,
+   "stage": "terrain"
+  },
+  "web/public/terrain/elevgrid.bin": {
+   "sha256": "99ef8f35f07b561b878e2a3883688f4e4b903da4b551b5ed5c255c28afa01e11",
+   "bytes": 2097152,
+   "stage": "terrain"
+  },
+  "research/validation/result-converged.json": {
+   "sha256": "66842edc4e3e2412e2f68809f4eaeb373c1243747e7ab1dc705c5ffcc0682607",
+   "bytes": 937,
+   "stage": "validate-lola"
+  },
+  "research/validation/pairs-converged.csv": {
+   "sha256": "83f2c35fdb26e30a51a47396fe8c58f742e9ebcfa12c4f3576f778a00dd9f08c",
+   "bytes": 84406,
+   "stage": "validate-lola"
+  },
+  "research/validation/scatter-converged.svg": {
+   "sha256": "7c05a44f8acd2c3bb686c13e3f32ba3d9dc8123c902254d816dc182c36aff125",
+   "bytes": 123166,
+   "stage": "validate-lola"
+  },
+  "research/validation/result-wac.json": {
+   "sha256": "970c23ec1a1fc0265492a69d0875e5c9ea9de7a3af214cde257a1d6bac2d3ae7",
+   "bytes": 2260,
+   "stage": "validate-wac"
+  },
+  "research/validation/pairs-wac.csv": {
+   "sha256": "2f3a906a1b777774f09fc4be7daf8e4af10413890422a4a265f3d3b9a57d760c",
+   "bytes": 10937,
+   "stage": "validate-wac"
+  },
+  "web/public/terrain/sites.json": {
+   "sha256": "76a3f288da5e363c4d45718309f84d6571cde873290fb184711a071d50a60e17",
+   "bytes": 137035,
+   "stage": "sites"
+  },
+  "web/public/terrain/regions.json": {
+   "sha256": "ce5e6bad6d9126aac749b7013fb403a03dff55e3d7bc7bca8e53f348f5a7dbb8",
+   "bytes": 45777,
+   "stage": "sites"
+  },
+  "web/public/terrain/validation.json": {
+   "sha256": "6f498d160843961f9b181707af77dfc3afef68361d10d555a163806399b636ad",
+   "bytes": 1231,
+   "stage": "sites"
+  },
+  "web/public/terrain/nearby.json": {
+   "sha256": "8753241db3d56d7d8bffc8dae26358ca7b7b59b60827026a95e94a64023caa13",
+   "bytes": 289014,
+   "stage": "nearby"
+  },
+  "web/public/terrain/finder.bin": {
+   "sha256": "08571adb94f7d581b6cfff5fd22d9f6f34cb2e4887c8eb069e98acfefa51ba17",
+   "bytes": 6234794,
+   "stage": "finder"
+  },
+  "web/public/terrain/finder.json": {
+   "sha256": "3c79a91d6f8f0fe822ef47a925b8603e1aa6203b26e070b60be910e2ae39df7a",
+   "bytes": 310,
+   "stage": "finder"
+  },
+  "web/public/terrain/missions.json": {
+   "sha256": "5338e528493adbddb885d2e60a0fbfbc82e7401c86b9c58682255c74daf77af2",
+   "bytes": 25671,
+   "stage": "missions"
+  },
+  "research/validation/nearby.json": {
+   "sha256": "7d089645f4aa696929a105f125aebb3ef8efbd7b4b95b30fe560b01e5b9e3d62",
+   "bytes": 43897,
+   "stage": "validate-nearby"
+  },
+  "research/validation/result-wac-movie.json": {
+   "sha256": "52d6cac32ddb9664cd2ea6694e1cb831a191f181e70698b4e9a74c5591d447bc",
+   "bytes": 5811,
+   "stage": "validate-wac-movie"
+  },
+  "web/public/terrain/wac-movie.json": {
+   "sha256": "b9dc4cc97007a81b911589f2a73021b438af1419ab3539dce82b1b93fbfde887",
+   "bytes": 16162,
+   "stage": "validate-wac-movie"
+  },
+  "web/public/terrain/wac-movie.bin": {
+   "sha256": "805789ec038e190256eac1b90d067f6b1869d479b025e6266a35df8d0e8307b4",
+   "bytes": 626661,
+   "stage": "validate-wac-movie"
+  }
+ }
+}

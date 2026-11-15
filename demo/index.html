@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SUNLOCK — Project Demo</title>
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #05070d; }
+  body {
+    font-family: "Helvetica Neue", Inter, system-ui, sans-serif;
+    color: #e8eef8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .slide {
+    width: 1280px; height: 720px;
+    padding: 56px 64px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    background:
+      radial-gradient(900px 420px at 12% -10%, rgba(60,90,160,.20), transparent 62%),
+      #05070d;
+    display: flex; flex-direction: column;
+    justify-content: center;
+  }
+  .slide:last-child { page-break-after: auto; }
+  .kicker {
+    font-size: 12px; letter-spacing: .22em; text-transform: uppercase;
+    color: #7d90ad; margin-bottom: 10px;
+  }
+  h1 { font-size: 64px; margin: 0 0 10px; letter-spacing: .04em; }
+  h2 { font-size: 34px; margin: 0 0 22px; line-height: 1.18; letter-spacing: -.01em; }
+  p { font-size: 17px; line-height: 1.62; color: #b7c7dc; margin: 0 0 14px; max-width: 62ch; }
+  .muted { color: #7d90ad; }
+  .sun { color: #f2b45c; }
+  .comm { color: #3fc7f0; }
+  .rule { height: 1px; background: #1b2433; margin: 22px 0; }
+  .footer {
+    position: absolute; left: 64px; right: 64px; bottom: 26px;
+    display: flex; justify-content: space-between;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #4f6383;
+  }
+  .num { color: #f2b45c; }
+
+  /* title */
+  .title-slide { justify-content: center; }
+  .mark {
+    width: 66px; height: 66px; border-radius: 50%;
+    background: radial-gradient(circle at 34% 30%, #fff3d6, #f2b45c 42%, #8a4b12 78%, #2a1506);
+    box-shadow: 0 0 60px rgba(242,180,92,.45);
+    margin-bottom: 26px;
+  }
+  .title-slide h1 { font-size: 92px; }
+  .tagline { font-size: 24px; color: #cbd8ea; margin-top: 4px; }
+  .meta { margin-top: 38px; display: flex; gap: 34px; flex-wrap: nowrap; font-size: 13px; color: #7d90ad; letter-spacing: .04em; }
+  .meta b { color: #dfe8f6; font-weight: 600; display: block; margin-bottom: 3px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+
+  /* two-column */
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 46px; align-items: start; }
+  .cols.wide-left { grid-template-columns: 1.35fr 1fr; }
+
+  ul { margin: 0; padding-left: 20px; }
+  li { font-size: 16.5px; line-height: 1.68; color: #b7c7dc; margin-bottom: 10px; }
+  li b { color: #e8eef8; }
+
+  .shot {
+    border: 1px solid #1b2433; border-radius: 14px; overflow: hidden;
+    background: #03050a; display: block; width: 100%; height: auto;
+  }
+  .shot-tall { width: auto; max-height: 452px; margin: 0 auto; }
+  .shot-wide { max-height: 236px; object-fit: contain; background: #05070d; }
+  .shot-mid { max-height: 300px; object-fit: contain; background: #05070d; }
+  .caption { font-size: 11.5px; color: #5f7391; margin-top: 9px; letter-spacing: .03em; }
+
+  .statrow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 6px 0 22px; }
+  .stat {
+    background: #0a0f18; border: 1px solid #16202f; border-radius: 12px; padding: 14px 16px;
+  }
+  .stat .k { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #7d90ad; }
+  .stat .v { font-size: 30px; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .stat .h { font-size: 10.5px; color: #5f7391; margin-top: 2px; }
+
+  .pipe { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 4px 0 18px; }
+  .step {
+    background: #0a0f18; border: 1px solid #1b2433; border-radius: 12px; padding: 14px;
+    position: relative;
+  }
+  .step .n { font-size: 10px; color: #f2b45c; letter-spacing: .16em; }
+  .step h3 { font-size: 14.5px; margin: 6px 0 6px; }
+  .step p { font-size: 11.5px; line-height: 1.5; margin: 0; color: #8fa2bd; }
+
+  .note {
+    margin-top: 20px; border-left: 2px solid #f2b45c; padding-left: 14px;
+    font-size: 14.5px; color: #cbd8ea; line-height: 1.55; max-width: 74ch;
+  }
+  .links { font-size: 15px; line-height: 1.9; color: #b7c7dc; }
+  .links b { color: #f2b45c; font-weight: 500; }
+  code { font-size: 12.5px; background: #101a29; padding: 1px 6px; border-radius: 4px; color: #c9dcf7; }
+</style>
+</head>
+<body>
+
+<section class="slide title-slide">
+  <div class="mark"></div>
+  <h1>SUNLOCK</h1>
+  <div class="tagline">Find the week the Sun comes back.</div>
+  <p style="margin-top:18px; max-width:56ch">
+    A landing-window navigator for the lunar south pole. Real terrain, real ephemerides,
+    and the illumination and Earth-link windows that decide when a mission can land.
+  </p>
+  <div class="meta">
+    <div><b>Team</b>SUNLOCK</div>
+    <div><b>Team member</b>Aman Kumar Sah</div>
+    <div><b>Challenge</b>Lunar Landing Site Navigator</div>
+    <div><b>Event</b>NASA Space Apps Challenge 2026 · Universal</div>
+  </div>
+  <div class="footer"><span>NASA Space Apps Challenge 2026</span><span>The Next Frontier</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">01 — The problem</div>
+  <h2>At the lunar south pole, the Sun skims the horizon.<br/>Terrain, not latitude, decides whether you have power.</h2>
+  <div class="cols">
+    <div>
+      <ul>
+        <li>The Sun rises <b>at most ~1.5°</b> above the pole. A crater rim thirty metres away can be the difference between a solar array and permanent night.</li>
+        <li>Earth sits low too. Libration swings it <b>±7°</b>, so direct-to-Earth windows open and close over days.</li>
+        <li>Existing tools are research code, command-line scripts or GIS layers. Comparing nine candidate sites across a season is an afternoon of scripting.</li>
+        <li>The stakes are not academic: <b>power and communications drive the whole mission architecture.</b></li>
+      </ul>
+    </div>
+    <div>
+      <div class="statrow" style="grid-template-columns:1fr 1fr">
+        <div class="stat"><div class="k">Sun at the pole</div><div class="v">≤ 1.5°</div><div class="h">maximum solar elevation</div></div>
+        <div class="stat"><div class="k">Earth libration</div><div class="v">± 7°</div><div class="h">line-of-sight swing</div></div>
+        <div class="stat"><div class="k">Best published sites</div><div class="v">~88%</div><div class="h">18.6-yr mean, optimised clusters</div></div>
+        <div class="stat"><div class="k">Worst gaps</div><div class="v">days</div><div class="h">of continuous darkness</div></div>
+      </div>
+      <p class="muted" style="font-size:13px">
+        Numbers on the right are the published range for south-pole landing regions — and the range our
+        tool reproduces independently from LOLA terrain.
+      </p>
+    </div>
+  </div>
+  <div class="footer"><span>SUNLOCK</span><span class="num">02 / 07</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">02 — What we built</div>
+  <h2>One slider. The whole pole goes dark and light.</h2>
+  <div class="cols wide-left">
+    <div>
+      <img class="shot shot-tall" src="map.jpg" alt="Sunlit terrain map of the lunar south pole" />
+      <div class="caption">Real LOLA terrain, 80 m per pixel. Dark areas are in terrain shadow at the selected instant. Click any point to analyse it.</div>
+    </div>
+    <div>
+      <ul>
+        <li><b>Scrub time.</b> The shadow map is recomputed from the elevation model on every step — not a texture, a simulation.</li>
+        <li><b>Pick a site — or click anywhere.</b> Nine candidate regions, plus any point you tap on the map, run through the same horizon test.</li>
+        <li><b>Read the verdict.</b> Sunlight %, longest continuous night, Earth-link duty cycle.</li>
+        <li><b>Look up from the site.</b> A sky panorama plots the Sun and Earth against the real ridge line, so occlusion is visible, not implied.</li>
+        <li><b>Find the window.</b> Ranked, non-overlapping landing windows for a chosen mission length.</li>
+      </ul>
+      <div class="note">A planner goes from "which site, and when?" to a defensible answer in about ten seconds.</div>
+    </div>
+  </div>
+  <div class="footer"><span>SUNLOCK</span><span class="num">03 / 07</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">03 — How it works</div>
+  <h2>Four deterministic steps. No model, no guesswork.</h2>
+  <div class="pipe">
+    <div class="step"><div class="n">01 · TERRAIN</div><h3>LOLA elevation model</h3><p>NASA LRO laser altimetry, <code>LDEM_80S_80M</code>, 80 m/pixel, south polar stereographic. 7,600 × 7,600 samples.</p></div>
+    <div class="step"><div class="n">02 · HORIZON</div><h3>Ray-march the skyline</h3><p>From each point, 360 azimuths out to 64 km, with lunar curvature correction, give the true local horizon.</p></div>
+    <div class="step"><div class="n">03 · EPHEMERIS</div><h3>Sun and Earth, body-fixed</h3><p>VSOP87/ELP-class positions rotated into the IAU 2015 lunar frame — including the Moon's 1.54° tilt and libration.</p></div>
+    <div class="step"><div class="n">04 · DECISION</div><h3>Lit, linked, ranked</h3><p>A point is sunlit when solar elevation clears its horizon; Earth-linked while Earth is above the skyline. Then windows are searched.</p></div>
+  </div>
+  <div class="cols" style="margin-top:8px; grid-template-columns: 1.45fr 1fr">
+    <div>
+      <img class="shot shot-wide" src="sky.jpg" alt="Sky panorama with terrain horizon, Sun and Earth" />
+      <div class="caption">Sky above the site: the terrain silhouette is the real horizon, Earth sits 5.1° above it, the Sun only 0.4°. This is the test that decides light and link.</div>
+    </div>
+    <div>
+      <ul>
+        <li><b>Verifiable, not vibes.</b> Every output is a function of public data you can re-run.</li>
+        <li><b>Cross-checked against JPL Horizons.</b> Sun and Earth directions agree to <b>0.006°</b> across 12 epochs — 23 arcseconds, two orders below the 80 m terrain.</li>
+        <li><b>Honest limits</b> are printed in the app: no refraction, no thermal model, 80 m resolution.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>SUNLOCK</span><span class="num">04 / 07</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">04 — Results</div>
+  <h2>It agrees with the literature — and separates the sites.</h2>
+  <div class="statrow">
+    <div class="stat"><div class="k">Peak near Shackleton</div><div class="v">73%</div><div class="h">sunlit over 180 days</div></div>
+    <div class="stat"><div class="k">Longest night</div><div class="v">11.5 d</div><div class="h">continuous darkness</div></div>
+    <div class="stat"><div class="k">Array, sun-facing</div><div class="v">6.0 kWh</div><div class="h">per m² per day</div></div>
+    <div class="stat"><div class="k">Battery, 100 W load</div><div class="v">34.5 kWh</div><div class="h">to ride out the night</div></div>
+  </div>
+  <div class="cols" style="gap:30px">
+    <div>
+      <img class="shot shot-mid" src="power.jpg" alt="Power and storage panel" />
+    </div>
+    <div>
+      <img class="shot shot-mid" src="windows.jpg" alt="Earth-link window list" />
+    </div>
+  </div>
+  <p style="margin-top:18px; font-size:15.5px; max-width:96ch">
+    Validated against NASA's own 18.6-year LOLA visibility map (<b>r = 0.995</b>, RMSE 1.4
+    percentage points) and against the LROC image-derived map built from 3,807 photographs
+    (<b>r = 0.980</b>). That comparison caught a real defect — the horizon was being read 180°
+    from the Sun — which is why these numbers differ from earlier drafts. The 73% is at a region
+    centre, not a searched optimum, so it sits below the published 85–88% for optimised clusters.
+    The power panel shows why polar arrays are mounted vertically: a flat panel gathers
+    0.02 kWh/m²/day here against 6.0 sun-facing.
+  </p>
+  <div class="footer"><span>SUNLOCK</span><span class="num">05 / 07</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">05 — Why it matters</div>
+  <h2>Built for the people who have to choose a landing site — and for everyone watching.</h2>
+  <div class="cols">
+    <div>
+      <ul>
+        <li><b>Mission planners</b> compare candidate regions in minutes, with power and comm trade-offs visible together.</li>
+        <li><b>Educators and students</b> get a truthful answer to "why is the Moon's south pole so hard?" — no orbital mechanics degree required.</li>
+        <li><b>The public</b> can see the Artemis decision problem for themselves, on data from a NASA spacecraft.</li>
+      </ul>
+      <div class="note">The same tool generalises to any airless body with a digital elevation model and an ephemeris: Mercury, asteroids, Mars' moons.</div>
+    </div>
+    <div>
+      <div class="stat" style="padding:20px">
+        <div class="k" style="margin-bottom:10px">NASA data used</div>
+        <p style="font-size:13.5px; margin:0 0 12px">
+          <b>LRO LOLA</b> gridded south polar digital elevation model, product LDEM_80S_80M, NASA Planetary Data System
+          Geosciences Node (LRO-L-LOLA-4-GDR-V1.0).
+        </p>
+        <p style="font-size:13.5px; margin:0">
+          Ephemerides and the lunar rotation model from Astronomy Engine (VSOP87/ELP), oriented with the
+          IAU WGCCRE 2015 lunar frame.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>SUNLOCK</span><span class="num">06 / 07</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">06 — What's next</div>
+  <h2>From a demonstration to a planning instrument.</h2>
+  <div class="cols">
+    <div>
+      <ul>
+        <li><b>Higher-resolution terrain</b> — swap in the 20 m south-pole DEM for site-scale precision.</li>
+        <li><b>Landing-ellipse analysis</b> — score a whole ellipse rather than a point, and report risk.</li>
+        <li><b>Power and thermal model</b> — turn illumination into watts and battery sizing.</li>
+        <li><b>Multi-body</b> — the same physics for Mercury, asteroids and Mars' moons.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="links">
+        <div><b>Live tool</b><br/>shahaman098.github.io/sunlock</div>
+        <div style="margin-top:14px"><b>Source</b><br/>github.com/shahaman098/sunlock</div>
+        <div style="margin-top:14px"><b>Rebuild the terrain</b><br/><code>node scripts/build-terrain.mjs</code></div>
+      </div>
+    </div>
+  </div>
+  <div class="note" style="margin-top:36px">
+    Every number in this demo can be reproduced from public NASA data with one script.
+    That is the point.
+  </div>
+  <div class="footer"><span>SUNLOCK</span><span class="num">07 / 07</span></div>
+</section>
+
+</body>
+</html>

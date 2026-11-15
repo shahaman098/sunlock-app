@@ -1,0 +1,1 @@
+{"n":512,"layout":"pareto-v1","spots":864369,"bytesPerCandidate":6,"cellM":592.6172,"halfM":151710,"pixM":60,"off":2528.5,"candidate":["sunPct","earthPct","slopeDegX4","psrKmX20","dxPixel","dyPixel"],"sources":["AVGVISIB_85S_060M_201608","AVGVISIB_85S_060M_201608_EARTH","LPSR_85S_060M_201608","LDEM_80S_80M"]}
